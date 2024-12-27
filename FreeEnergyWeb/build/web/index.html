@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Renal Inner Medulla Free-Energy Calculator</title>
+        <style type="text/css">
+            body
+            {
+                margin: 0; padding: 0;
+                color: #333;
+                font: 12px/1.5 verdana, sans-serif;
+            }
+            #topbg {
+                position: absolute; top: 0; left: 0; z-index: -1;
+                width: 100%; height: 143px;
+                background: #014172;
+            }
+            h1
+            {
+                color: red;
+                text-align: center;
+            }
+            p
+            {
+                text-align: center;
+            }
+            div
+            {
+                text-align: center;
+            }
+            img 
+            {
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topbg"></div>
+        <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="images/LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none" /></a></h1>
+        <h1><a href="http://helixweb.nih.gov/ESBL/" target="_blank"><img src="images/ESBL.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none" /></a></h1>
+        <br>
+        <h1>Renal Inner Medulla Free-Energy Calculator</h1>
+        <p style="text-align: left; margin-left: 70px; margin-right: 60px">
+            The <strong>Renal Inner Medulla Free-Energy Calculator</strong> is a tool that allows the user to calculate <strong>steady-state mass balance</strong> and <strong>free-energy balance</strong> requirements for the renal inner medulla given a particular set of flows and concentrations in loops of Henle, collecting ducts, and vasa recta at the border between the inner and outer medulla of the mammalian kidney.&nbsp;&nbsp;The free-energy calculations implement the equations of <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC388287/?tool=pubmed" target="_blank">Stephenson, Tewarson, and Mejia</a>.&nbsp;&nbsp;Sample data may be found by <a href="sample_data.html" target="_blank">clicking here</a>.
+        </p>
+        <p style="text-align: left; margin-left: 70px; margin-right: 60px">
+            <a href="faq.html" target="_blank">Frequently Asked Questions</a>
+        </p>
+        <p>
+            <script type="text/javascript" src="http://www.java.com/js/deployJava.js"></script>
+            <script type="text/javascript"> 
+                var attributes = { 
+                    code:'FreeEnergyApplet.class', 
+                    archive:'FreeEnergyApplet.jar,water.png,salt.png,urea.png', 
+                    width:1130, 
+                    height:780
+                    }; 
+                var parameters = {};
+                var version = '1.6';
+                deployJava.runApplet(attributes, parameters, version); 
+            </script>
+        </p>
+        <noscript>
+            <p>
+                <applet 
+                    height="780" 
+                    width="1130" 
+                    code="FreeEnergyApplet.class" 
+                    archive="FreeEnergyApplet.jar,water.png,salt.png,urea.png">
+                    Renal Inner Medulla Free-Energy Calculator Java Applet
+                </applet>
+            </p>
+        </noscript>
+        <p>To download the Java executable [.jar] file, <a href="Free-Energy.zip">click here</a>.</p>
+        <p>This program was created by Ryan Vilbig, Trairak Pisitkun, Joe Zischkau, Abhijit Sarkar, and Mark Knepper.&nbsp;&nbsp;<a href="https://dirweb.nhlbi.nih.gov/labs/LKEM_G/LKEM/Pages/ResearchInfo.aspx" target="_blank">Contact us</a> with questions or comments.</p>
+        <p><strong>Renal Inner Medulla Free-Energy Calculator</strong> is hosted and supported by: <a href="http://biowulf.nih.gov/" target="_blank"><img src="images/Biowulf.png" alt="Biowulf at the NIH" height="58" style="border-style: none"></a></p>
+        <hr>
+        <div class="footarea">
+            <div class="footer">
+                <a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+                <a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+                <a href="http://www.nhlbi.nih.gov/nhlbi508form.htm" class="footlink" target="_blank">Accessibility</a> |
+            </div>
+            <div class="footer2">
+                <a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+                <a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+                <a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+                <a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+                <a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+                <a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+            </div>
+        </div>
+    </body>
+</html>
+

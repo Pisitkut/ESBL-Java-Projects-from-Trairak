@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Renal Inner Medulla Free-Energy Calculator</title>
+        <style type="text/css">
+            body
+            {
+                margin: 0; padding: 0;
+                color: #333;
+                font: 12px/1.5 verdana, sans-serif;
+            }
+            #topbg {
+                position: absolute; top: 0; left: 0; z-index: -1;
+                width: 100%; height: 143px;
+                background: #014172;
+            }
+            h1
+            {
+                color: red;
+                text-align: center;
+            }
+            h2
+            {
+                color: red;
+                text-align: left;
+                margin-left: 70px;
+            }
+            h4
+            {
+                text-align: left;
+                margin-left: 70px;
+                margin-right: 70px
+            }
+            p
+            {
+                text-align: left; 
+                margin-left: 70px; 
+                margin-right: 70px;
+            }
+            div
+            {
+                text-align: center;
+            }
+            img 
+            {
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topbg"></div>
+        <h1 style="margin-top: 15px"><a href="http://www.nhlbi.nih.gov/" target="_blank"><img src="images/LinearSignature_RGB.png" alt="National Heart, Lung, and Blood Institute" style="border-style: none" /></a></h1>
+        <h1><a href="http://helixweb.nih.gov/ESBL/" target="_blank"><img src="images/ESBL.png" alt="Epithelial Systems Biology Laboratory (ESBL)" style="border-style: none" /></a></h1>
+        <br>
+        <h1>Renal Inner Medulla Free-Energy Calculator</h1>
+        <p>
+            The <strong>Renal Inner Medulla Free-Energy Calculator</strong> is a tool that allows the user to calculate <strong>steady-state mass balance</strong> and <strong>free-energy balance</strong> requirements for the renal inner medulla given a particular set of flows and concentrations in loops of Henle, collecting ducts, and vasa recta at the border between the inner and outer medulla of the mammalian kidney.&nbsp;&nbsp;The free-energy calculations implement the equations of <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC388287/?tool=pubmed" target="_blank">Stephenson, Tewarson, and Mejia</a>.&nbsp;&nbsp;Sample data may be found by <a href="sample_data.html" target="_blank">clicking here</a>.
+        </p>
+        <h2>Frequently Asked Questions</h2>
+        <h4>Is there a preferred order to enter values?</h4>
+        <p>
+            No. The user can freely explore the effect of any available parameter on the net free-energy flow. 
+        </p>
+        <h4>What are the default values based on?</h4>
+        <p>
+            The default values are set for rat inner medulla and are based on values modified from Figure 2 of a paper by Kokko and Rector (i.e. data set <a href="adjusted_VR_concs.txt">adjusted vasa recta concentrations</a>).
+        </p>
+        <h4>How can I reset all parameters to the default values?</h4>
+        <p>
+            You can do that by pressing the &quot;Refresh&quot; or &quot;Reload&quot; button on your web browser.
+        </p>
+        <h4>What is the &quot;site of single effect&quot;?</h4>
+        <p>
+            The single effect site specifies what flow stream at the outer-inner medullary junction can differ from the specified osmolality allowing the inner medulla as a whole to concentrate the urine stream. Na and urea values for the selected site of single effect are displayed in <span style="color: red">red</span>.
+        </p>
+        <h4>What happen to Na and urea values when I change the osmolality at the junction of outer and inner medulla?</h4>
+        <p>
+            Na and urea values of all structures other than the site of single effect will be automatically readjusted (while maintaining the previous Na:urea proportion) to match the osmolality at the outer-inner medullary junction. Consequently, the concentration, mass flow, and percent delivery of Na and urea in the final urine will be automatically calculated to achieve overall mass balance.
+        </p>
+        <h4>What is the &quot;non-reabsorbable solute&quot; (NRS)?</h4>
+        <p>
+            The non-reabsorbable solute accounts for the osmotic effect of solutes in the collecting duct other than urea and NaCl, i.e. all salts including potassium, ammonium, and organic molecules.
+        </p>
+        <h4>What happens to Na and urea values when I change the amount (in mOsm) of the non-reabsorbable solute for the collecting duct (CD)?</h4>
+        <p>
+            Na and urea values of CD (if CD is not selected as the site of single effect) will be automatically readjusted (while maintaining the previous Na:urea proportion) to match the osmolality at the outer-inner medullary junction. Consequently, the concentration, mass flow, and percent delivery of Na and urea in the final urine will be automatically calculated to achieve overall mass balance.
+        </p>
+        <h4>Do I need to specify the percent of nephrons with long loops?</h4>
+        <p>
+            The percent of nephrons with long loops must be specified because these loops of Henle are the only ones that cross the outer-inner medullary junction.
+        </p>
+        <h4>What is the water flow rate?</h4>
+        <p>
+            It is the absolute flow rate (for the aggregate of all relevant nephrons) in each structure.
+        </p>
+        <h4>What are the radio buttons in the water flow panel for?</h4>
+        <p>
+            A given radio button is used to indicate the flow that is to be calculated from the other five flows to achieve overall mass balance for water.
+        </p>
+        <h4>What is the TF/P inulin?</h4>
+        <p>
+            TF/P inulin represents the flow in terms commonly used in micropuncture studies. It represents the aggregate filtered load of water for the relevant nephrons (aggregate glomerular filtration rate) divided by the absolute flow rate for a given structure.
+        </p>
+        <h4>Can I enter the total osmolality of NaCl or urea rather than the Na or urea concentration (in mM)?</h4>
+        <p>
+            No. The program will automatically convert the Na and urea concentrations into the total osmolalities by the equation: Osm = [Na] × 1.86 + [urea] × 0.92 + [NRS]. This equation uses the osmotic coefficients for NaCl and urea.   
+        </p>
+        <h4>Can I enter Na or urea values for urine?</h4>
+        <p>
+            No. Na or urea values are instead entered for all structures at the outer-inner medullary junction (DL, AL, DVR, AVR, and CD). The Na or urea concentration, mass flow, and percent delivery in the final urine will be automatically calculated to achieve overall mass balance. 
+        </p>
+        <h4>I tried entering values from the output of some published medullary modeling studies, but the calculator won't let me enter all the values, i.e. it recalculates some values as I enter others.</h4>
+        <p>
+            When the user modifies Na (or urea) values in a particular structure other than the site of single effect, the complementary urea (or Na) values will be automatically calculated to match the osmolality at the outer-inner medullary junction. The Na or urea concentration, mass flow, and percent delivery in the final urine will also be automatically calculated to achieve overall mass balance. Changes in the water flow rate, the osmolality at the junction of outer and inner medulla, or the amount of the non-reabsorbable solute for the collecting duct also affect Na and urea values. The calculator cannot take a set of values that does not comply with mass balance verbatim without readjusting them to assure mass balance.   
+        </p>
+        <h4>What does the &quot;Illegal value&quot; warning for the urine Na or urea values indicate?</h4>
+        <p>
+            The warning appears when the urine values are negative which is physically impossible. The user should modify certain parameters to make the urine values turn positive.
+        </p>
+        <h4>When I change the site of single effect, what will happen to Na and urea values of the previous single effect site?</h4>
+        <p>
+            Na and urea values of the previous single effect site will be automatically readjusted (while maintaining the previous Na:urea proportion) to match the osmolality at the outer-inner medullary junction. Consequently, the concentration, mass flow, and percent delivery of Na and urea in the final urine will be automatically calculated to achieve overall mass balance. Sometimes, this causes the urine values to be negative and the &quot;Illegal value&quot; warning will appear.
+        </p>
+        <br>
+        <p style="text-align: center;">This program was created by Ryan Vilbig, Trairak Pisitkun, Joe Zischkau, Abhijit Sarkar, and Mark Knepper.&nbsp;&nbsp;<a href="https://dirweb.nhlbi.nih.gov/labs/LKEM_G/LKEM/Pages/ResearchInfo.aspx" target="_blank">Contact us</a> with questions or comments.</p>
+        <p style="text-align: center;"><strong>Renal Inner Medulla Free-Energy Calculator</strong> is hosted and supported by: <a href="http://biowulf.nih.gov/" target="_blank"><img src="images/Biowulf.png" alt="Biowulf at the NIH" height="58" style="border-style: none"></a></p>
+        <hr>
+        <div class="footarea">
+            <div class="footer">
+                <a href="http://helix.nih.gov/disclaimer.html" class="footlink" target="_blank">Disclaimer</a> |
+                <a href="http://helix.nih.gov/privacy.html" class="footlink" target="_blank">Privacy</a> |
+                <a href="http://www.nhlbi.nih.gov/nhlbi508form.htm" class="footlink" target="_blank">Accessibility</a> |
+            </div>
+            <div class="footer2">
+                <a href="http://helix.nih.gov/" class="footlink" target="_blank">Helix Systems</a> |
+                <a href="http://cit.nih.gov/" class="footlink" target="_blank">CIT</a> |
+                <a href="http://www.nhlbi.nih.gov/" class="footlink" target="_blank">NHLBI</a> |
+                <a href="http://www.nih.gov/" class="footlink" target="_blank">NIH</a> |
+                <a href="http://www.dhhs.gov/" class="footlink" target="_blank">DHHS</a> |
+                <a href="http://www.firstgov.gov/" class="footlink" target="_blank">USA.gov</a>
+            </div>
+        </div>
+    </body>
+</html>
+

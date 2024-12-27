@@ -1,0 +1,58 @@
+Site of single effect	AL
+Osmolality at OM-IM junction (mOsm)	1200.0
+Non-Reabsorbable Solute (NRS) for CD (mOsm)	200.0
+Glomerular filtration rate (µl/min)	1000.0
+Plasma Na (mM)	140.0
+Plasma Urea (mM)	5.0
+% of nephrons with long loops	30.0
+Site to calculate volume in mass balance	AVR
+Water flow: DL (µl/min)	25.862068965517242
+Water flow: AL (µl/min)	17.24137931034483
+Water flow: DVR (µl/min)	25.0
+Water flow: AVR (µl/min)	40.10217113665389
+Water flow: CD (µl/min)	8.333333333333332
+Water flow: Urine (µl/min)	1.8518518518518519
+TF/P inulin: DL	11.6
+TF/P inulin: AL	17.4
+TF/P inulin: DVR	40.0
+TF/P inulin: AVR	24.936305732484083
+TF/P inulin: CD	120.00000000000001
+TF/P inulin: Urine	540.0
+Na concentration: DL (mM)	603.2258064516129
+Na concentration: AL (mM)	379.03225806451616
+Na concentration: DVR (mM)	638.9677419354839
+Na concentration: AVR (mM)	638.9677419354839
+Na concentration: CD (mM)	320.8602150537634
+Na concentration: Urine (mM)	1128.4182424916596
+Na mass flow: DL (nmol/min)	15600.66740823137
+Na mass flow: AL (nmol/min)	6535.038932146831
+Na mass flow: DVR (nmol/min)	15974.193548387098
+Na mass flow: AVR (nmol/min)	25623.993737898072
+Na mass flow: CD (nmol/min)	2673.835125448028
+Na mass flow: Urine (nmol/min)	2089.6634120215917
+% Na delivery: DL	11.143333863022406
+% Na delivery: AL	4.66788495153345
+% Na delivery: DVR	11.410138248847927
+% Na delivery: AVR	18.302852669927194
+% Na delivery: CD	1.909882232462877
+% Na delivery: Urine	1.493
+Urea concentration: DL (mM)	81.25
+Urea concentration: AL (mM)	313.5416666666667
+Urea concentration: DVR (mM)	12.0
+Urea concentration: AVR (mM)	12.0
+Urea concentration: CD (mM)	420.00000000000006
+Urea concentration: Urine (mM)	7.6551724137924975
+Urea mass flow: DL (nmol/min)	2101.293103448276
+Urea mass flow: AL (nmol/min)	5405.890804597702
+Urea mass flow: DVR (nmol/min)	300.0
+Urea mass flow: AVR (nmol/min)	481.22605363984667
+Urea mass flow: CD (nmol/min)	3500.0
+Urea mass flow: Urine (nmol/min)	14.176245210726847
+% Urea delivery: DL	42.025862068965516
+% Urea delivery: AL	108.11781609195403
+% Urea delivery: DVR	6.0
+% Urea delivery: AVR	9.624521072796933
+% Urea delivery: CD	70.0
+% Urea delivery: Urine	0.284
+Final urine osmolality (mOsm)	3006.0
+Net free-energy flow (mJ/min)	-12.129
