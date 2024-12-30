@@ -1,0 +1,1 @@
+java -jar "AbDesigner.jar" -Xmx1024m
